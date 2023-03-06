@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import Header from '../components/Header'
+import Farm from '../components/Stake'
 import HeroArticle from '../components/View/HeroArticle'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -16,7 +17,8 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header/>
+      <Farm />
+      {/*<Header/>
       <div className='hero px-20 flex flex-wrap items-center justify-between h-full w-full'>
       <div className="left  my-5 lg:my-3 w-full lg:w-[45%] xl:w-[45%]">
         <HeroArticle />
@@ -27,7 +29,7 @@ export default function Home() {
           src='/staking.png'
           alt=' Illustration showing staking Money' />
         </div>
-      </div>
+  </div>*/}
     </>
   )
 }
