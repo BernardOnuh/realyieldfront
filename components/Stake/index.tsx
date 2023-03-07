@@ -16,7 +16,7 @@ const Farm = () => {
         setQuantity("");
     }
     const sdk = useSDK();
-    const contractAddress ='{{0x7231C27Db9F194037ACdE4341F8B0CC42ae457Cc}}'
+    const contractAddress ={{0x7231C27Db9F194037ACdE4341F8B0CC42ae457Cc}}
     const walletAddress = useAddress();
     const { contract } =useContract( contractAddress, 'RYD');
     const { data,isLoading, error} =useTokenBalance(contract,walletAddress);
