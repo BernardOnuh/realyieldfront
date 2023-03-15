@@ -1,6 +1,7 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState, useEffect} from 'react';
 import {ConnectWallet } from "@thirdweb-dev/react";
-import ActiveLink from './activeLink'
+import Link from 'next/link';
+import ActiveLink from './activeLink';
 
 
 
@@ -19,20 +20,15 @@ return (
           </ActiveLink>  
         </div>
         <ul className = "flex items-center text-purple-500 hidden  md:flex">
-        <li className="individual font-medium mx-3 cursor-pointer hover:text-white">
+        <li className="buy font-medium mx-3 px-3 cursor-pointer hover:text-white">
           <ActiveLink href={"/buy"}>
               Buy
             </ActiveLink>  
           </li>
-          <li className="individual font-medium mx-3 cursor-pointer hover:text-white">
-          <ActiveLink href={"/buy"}>
-              Stake
-            </ActiveLink>  
-          </li>
-          <li className="charities font-medium mx-3 cursor-pointer hover:text-white">
-           <ActiveLink href={"/DiscreteStaking"}>
-              Discrete Stake
-           </ActiveLink>
+          <li className="stake font-medium mx-3 px-3 cursor-pointer hover:text-white">
+            <ActiveLink href={"/stake"}>
+            Stake
+            </ActiveLink>
           </li>
             <li>
             <ConnectWallet accentColor="#880088" colorMode="dark" />

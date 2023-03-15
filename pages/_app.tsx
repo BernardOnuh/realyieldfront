@@ -5,7 +5,7 @@ import { ThirdwebProvider } from "@thirdweb-dev/react";
 
 export default function App({ Component, pageProps }: AppProps) {
   return(
-  <ThirdwebProvider activeChain="goerli">
+  <ThirdwebProvider activeChain="mumbai">
   <Component {...pageProps} />
   </ThirdwebProvider>
   )
