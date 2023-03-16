@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import {ConnectWallet } from "@thirdweb-dev/react";
 import Link from 'next/link';
 import ActiveLink from './activeLink';
+import MobileHeader from './mobile';
 
 
 
@@ -33,6 +34,11 @@ return (
             <li>
             <ConnectWallet accentColor="#880088" colorMode="dark" />
             </li>
+        </ul>
+        <ul className='mobile_account md:hidden'>
+          <li className='cursor-pointer'>
+            <MobileHeader/>
+          </li>
         </ul>
       </div>
       </div>

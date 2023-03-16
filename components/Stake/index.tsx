@@ -14,7 +14,7 @@ interface Props {
   data:any
 }
 
-const Stake:NextPage<Props> = ({data}) => {
+const Staked:NextPage<Props> = ({data}) => {
       const address = useAddress();
       const [amountToStake, setAmountToStake ] = useState('');
       const [withdrawAmount, setWithdrawAmount] = useState('');
@@ -49,11 +49,10 @@ const Stake:NextPage<Props> = ({data}) => {
   return (
     <Layout title='stake'>
         <div>
-          <div className="max-w-lg p-8 mx-auto my-10 bg-white shadow rounded-xl shadow-slate-300">
-            <h1 className="text-4xl font-medium text-black">RBTR Staking Dapp</h1>
-
+          <div className="max-w-lg md:px-4 sm:px-3 p-8 mx-auto my-10 bg-purple-400 shadow rounded-xl shadow-slate-300">
+            <h1 className="text-4xl font-medium text-white">RYD Staking Dapp</h1>
             <div className="my-5">
-              <div className="flex items-center justify-center w-full py-3 my-3 space-x-2 text-center transition duration-150 border rounded-lg border-slate-200 text-slate-700 hover:border-slate-400 hover:text-slate-900 hover:shadow">
+              <div className="flex items-center justify-center w-full py-3 my-3 space-x-2 text-center transition duration-150 border rounded-lg border-slate-200 text-slate-900 hover:border-slate-400 hover:text-slate-900 hover:shadow">
                 {/* {web3Provider == null ? (
                   //run if null,
                   <button
@@ -79,14 +78,14 @@ const Stake:NextPage<Props> = ({data}) => {
             <div className="my-10">
               <div className="flex flex-col space-y-5">
                 <label htmlFor="number">
-                  <p className="pb-2 font-medium text-slate-700">
+                  <p className="pb-2 font-medium text-slate-900">
                     Total RYD: <span id="balance">
                       {stakingTokenBalance?.displayValue}
                     </span>
                     
                   </p>
-                  <p className="pb-2 font-medium text-slate-700">
-                    Available Arbritage Token To Stake
+                  <p className="pb-2 font-medium text-slate-900">
+                    Available buy your RYD tokens Stake and get RWD tokens
                   </p>
                   <input
                   type ='number'
@@ -128,15 +127,15 @@ const Stake:NextPage<Props> = ({data}) => {
                 >Claim</Web3Button>
                 </div>
                 </label>
-                <p className="pb-2 font-medium text-slate-700">
-                    Total STK: <span id="balance">
+                <p className="pb-2 font-medium text-slate-900">
+                    Total RWD: <span id="balance">
                       {rewardTokenBalance?.displayValue}
                     </span>
                   </p>
                 
-                <p className="pb-2 font-medium text-slate-700" id="status" style={{ color: "green" }}></p>
+                <p className="pb-2 font-medium text-slate-900" id="status" style={{ color: "green" }}></p>
                 <label htmlFor="number">
-                  <p className="pb-2 font-medium text-slate-700">
+                  <p className="pb-2 font-medium text-slate-900">
                     Withdraw Token
                   </p>
                   
@@ -169,4 +168,4 @@ const Stake:NextPage<Props> = ({data}) => {
  );
 }
 
-export default Stake;
+export default Staked;

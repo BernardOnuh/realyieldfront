@@ -1,16 +1,15 @@
 import Layout from '../components/Layout';
 import { ConnectWallet } from '@thirdweb-dev/react'
+import React,{useState, useEffect} from 'react';
+import Staked from '../components/stake';
 
 const Stake =() =>{
+
     return(
-        <Layout title='stake'>
-            <div className='bg-gradient-to-r from-black to-violet-900 h-screen w-screen backdrop-blur-lg'>
-                <div className='flex justify-center items-center py-10'>  
-                    <ConnectWallet/>
-                </div>  
-             </div>
-        </Layout>
+        <div className='bg-gradient-to-t from-purple-900 to-black w-screen h-max px-5'>
+        <Staked/>
+        </div>
     )
 }
 
-export default Stake
+export default Stake;

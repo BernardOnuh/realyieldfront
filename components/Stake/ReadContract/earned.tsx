@@ -10,7 +10,7 @@ const Earned = () => {
     const formattedData = data/1000000000000000000;
     
   return ( 
-    <div className="pb-2 font-medium text-slate-700">
+    <div className="pb-2 font-medium text-slate-900">
     Reward Earned: {formattedData?.toString()}
     </div>
   )
