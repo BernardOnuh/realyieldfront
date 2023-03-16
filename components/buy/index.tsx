@@ -2,14 +2,10 @@ import React from 'react';
 import { useState, useEffect} from 'react';
 import { ethers } from 'ethers';
 import { ConnectWallet, useContract, useContractWrite, Web3Button, useAddress, useTokenBalance} from '@thirdweb-dev/react';
-import { NextPage } from 'next'
 import Layout from '../Layout'
 
-interface Props {
-    data:any
-}
 
-const Buye:NextPage<Props>=({data}) => {
+const Buye = () => {
     const address = useAddress();
     const [amountToBuy, setAmountToBuy ] = useState('');
     const StakingTokenAddress = '0x665271f9C8CB4a3E438251d1Ec46413650F514D6';

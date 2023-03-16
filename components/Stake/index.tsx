@@ -7,14 +7,10 @@ import Earned from './ReadContract/earned';
 import Rewards from './ReadContract/rewards';
 import Layout from '../Layout';
 import Link from 'next/link';
-import { NextPage } from 'next'
 
 
-interface Props {
-  data:any
-}
 
-const Staked:NextPage<Props> = ({data}) => {
+const Staked = () => {
       const address = useAddress();
       const [amountToStake, setAmountToStake ] = useState('');
       const [withdrawAmount, setWithdrawAmount] = useState('');
