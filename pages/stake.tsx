@@ -1,10 +1,10 @@
-import Staked from '../components/stake';
+import Staking from '../components/stake/index';
 
 const Stake =() =>{
 
     return(
         <div className='bg-gradient-to-t from-purple-900 to-black w-screen h-max px-5'>
-        <Staked/>
+        <Staking/>
         </div>
     )
 }
