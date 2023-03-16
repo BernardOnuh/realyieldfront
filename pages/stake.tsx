@@ -1,4 +1,4 @@
-import Staking from '../components/stake/index';
+import Staking from '../components/stake'
 
 const Stake =() =>{
 

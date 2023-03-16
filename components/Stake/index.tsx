@@ -2,15 +2,12 @@ import React from 'react';
 import { useState,useEffect } from 'react';
 import { ethers } from 'ethers';
 import { ConnectWallet, useContract, useContractWrite, Web3Button, useAddress, useTokenBalance, useContractRead } from '@thirdweb-dev/react'
-import BalanceOf from './ReadContract/balanceOf';
-import Earned from './ReadContract/earned';
-import Rewards from './ReadContract/rewards';
+import BalanceOf from '../ReadContract/balanceOf';
+import Earned from '../ReadContract/earned';
+import Rewards from '../ReadContract/rewards';
 import Layout from '../Layout';
-import Link from 'next/link';
 
-
-
-const Staked = () => {
+const Staking = () => {
       const address = useAddress();
       const [amountToStake, setAmountToStake ] = useState('');
       const [withdrawAmount, setWithdrawAmount] = useState('');
@@ -164,4 +161,4 @@ const Staked = () => {
  );
 }
 
-export default Staked;
+export default Staking;
