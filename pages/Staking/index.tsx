@@ -5,7 +5,7 @@ import { ConnectWallet, useContract, useContractWrite, Web3Button, useAddress, u
 import BalanceOf from '../ReadContract/balanceOf';
 import Earned from '../ReadContract/earned';
 import Rewards from '../ReadContract/rewards';
-import Layout from '../Layout';
+import Layout from '../../components/Layout';
 
 const Staking = () => {
       const address = useAddress();
